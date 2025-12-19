@@ -1,4 +1,4 @@
-const audio = new Audio("/Public/soundtrack.mp3");
+const audio = new Audio("/loml/Public/soundtrack.mp3");
 
 function playMusic(value) {
   if (value) {

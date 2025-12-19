@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>loml</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="music-control">
+      <img
+        src="/Public/mute.svg"
+        alt="mute"
+        id="mute"
+        width="32px"
+        style="cursor: pointer; display: flex"
+        onclick="playMusic(1)"
+      />
+      <img
+        src="/Public/unmute.svg"
+        alt="unmute"
+        id="unmute"
+        width="32px"
+        style="cursor: pointer; display: none"
+        onclick="playMusic(0)"
+      />
+    </div>
+    <div class="month-section">
+      <h1 style="font-weight: 600">Oct 11, 2025</h1>
+      <img src="/Public/heart2.svg" alt="hearts" class="hearts" />
+    </div>
+    <div class="body-container">
+      <img
+        src="/Public/date1.jpg"
+        alt="date1"
+        style="width: 60vw; border-radius: 8px"
+      />
+      <img
+        src="/Public/date2.jpg"
+        alt="date2"
+        style="width: 60vw; border-radius: 8px"
+      />
+      <img
+        src="/Public/wave.svg"
+        alt="wave"
+        class="wave"
+        style="position: absolute"
+      />
+      <img
+        src="/Public/heart3.svg"
+        class="heart1"
+        alt="heart3"
+        style="position: absolute; top: 150px; right: 48px"
+      />
+      <img src="/Public/heart4.svg" alt="heart4" class="heart4" />
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

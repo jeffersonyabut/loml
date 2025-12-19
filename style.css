@@ -1,0 +1,83 @@
+body {
+  display: flex;
+  justify-items: center;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+}
+
+.music-control {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  height: 100px;
+  width: 60%;
+  padding: 8px;
+}
+
+.body-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 12px;
+}
+
+.month-section {
+  position: relative;
+}
+
+.hearts {
+  opacity: 0.5;
+  position: absolute;
+  top: 0px;
+  right: -60px;
+}
+
+.wave {
+  z-index: -1;
+  top: 200px;
+  right: 0px;
+  width: 50%;
+}
+
+.heart1 {
+  z-index: -1;
+  width: 5vw;
+  animation: moveHeart 3s ease-in-out infinite;
+}
+
+.heart4 {
+  z-index: -1;
+  width: 5vw;
+  position: absolute;
+  top: 250px;
+  left: 50px;
+  animation: moveHeart 3s ease-in-out infinite;
+}
+
+@media screen and (max-width: 768px) {
+  .heart4 {
+    width: 10vw;
+  }
+  .heart1 {
+    width: 10vw;
+  }
+}
+
+@keyframes moveHeart {
+  0% {
+    transform: translateY(0px);
+    opacity: 0.5;
+  }
+  50% {
+    transform: translateY(-10px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 0.5;
+  }
+}
